@@ -19,6 +19,7 @@
         .contacts-telephone {
             font-size: 18px;
             font-weight: 600;
+            color: #000;
         }
         .contacts-time {
             padding-left: 20px;
@@ -26,4 +27,121 @@
             font-weight: 400;
         }
     }
+}
+
+.header__main {
+    height: 60px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+        margin-left: -11px;
+    }
+    &-menu {
+        margin-top: 20px;
+        .menu__list {
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: inline-block;
+                font-size: 15px;
+                padding-right: 60px;
+                & + li {
+                    padding-right: 60px;
+                }
+                a{
+                    color: #000;
+                }
+            }
+        }
+    }
+    &-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .header__icon {
+            padding-left: 50px;
+        }
+    }
+}
+
+.navigation {
+    background-color: $green;
+    height: 52px;
+    .header__navigation {
+        display: flex;
+        justify-content: space-between;
+        &-items {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 16px;
+            .items__burger {
+                padding-right: 20px;
+                
+            }
+            .items__catalog a {
+                color: #fff;
+                font-weight: 600;
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+        &-form {
+                width: 570px; //max 
+                margin: 0 auto;
+                padding-top: 10px;
+                position: relative;
+                input {
+                    padding-left: 20px;
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    border-radius: 16px;
+                    height: 35px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    outline: none;
+                    &:focus {
+                        border: 1px solid $light-green;
+                    }
+                    &::placeholder {
+                        color: $gray;
+                    }
+                }
+            button {
+                position: absolute;  
+                background-color: $light-green;
+                right: 0;
+                top: 10px;
+                width: 100px;
+                height: 35px;
+                border-radius: 16px;
+                border: none;
+                outline: none;
+                &:focus {
+                    border: 1px solid $light-green;
+                }
+            }    
+        }
+        &-buy {
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            .basket {
+                padding-right: 20px;
+            }
+            .price {
+                color: #fff;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+.main__background {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 627px;
 }
