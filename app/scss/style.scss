@@ -119,6 +119,7 @@
                 border-radius: 16px;
                 border: none;
                 outline: none;
+                cursor: pointer;
                 &:focus {
                     border: 1px solid $light-green;
                 }
@@ -159,15 +160,26 @@
     min-height: 800px;
     min-width: 1272px;
     position: relative;
-    &-text {
+    h2 {
         width: 300px;
         line-height: 40px;
         position: absolute;
-        top: 271px;
-        right: 150px;
+        top: 282px;
+        right: 102px;
         color: #fff;
         font-size: 31px;
         font-weight: 600;
+    }
+    &-text { 
+        position: absolute;
+        top: 184px;
+        right: 90px;
+        width: 322.34px;
+        height: 331.64px;
+        background: #9dce99;
+        opacity: 0.45;
+        border-radius: 20px;
+        transform: rotate(-30deg);
     }
 }
 
@@ -181,7 +193,6 @@
     }      
     &__main {
         display: flex;
-        // justify-content: center;
         flex-wrap: wrap;
         
         &-block {
@@ -195,7 +206,7 @@
             border: 2px solid $gray;
             background-color: #fff;
             &:hover {
-                background-color: #a9efb75c;
+                background-color: #77df8ce0;
                 color: #fff;  
                 transition: 1s;
             }
