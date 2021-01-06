@@ -156,21 +156,22 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    min-height: 627px;
+    min-height: 800px;
     min-width: 1272px;
     position: relative;
     &-text {
         width: 300px;
         line-height: 40px;
         position: absolute;
-        top: 106px;
-        right: 90px;
+        top: 271px;
+        right: 150px;
         color: #fff;
         font-size: 31px;
         font-weight: 600;
     }
 }
 
+//Items
 .items {
     margin-top: 10px;  
     &__title {
@@ -208,6 +209,114 @@
         }
     } 
 }
+
+//products
+
+
+.product__stock {
+    padding: 30px 0;
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        .block-stock__title {
+            color: $gray;
+            font-size: 24px;
+        }
+        .block-showMore {
+            display: flex;
+
+            .show-all {
+                font-weight: 600;
+                color: #000;
+                padding-right: 20px;
+                margin-top: -2px;
+            }
+            .show-controls {
+                display: flex;
+                .left {
+                    padding-right: 22px;
+                a {    
+                    background-image: url(../img/main/left-arrow.png);background-repeat: no-repeat;
+                }
+            }
+          }
+        }
+    }
+}
+
+.product__objects {
+    padding-top: 25px;  
+    display: flex;  
+    .object {
+        margin-left: 20px;
+        width: 170px;
+        height: 370px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 5px rgba(15, 14, 14, 0.25);
+        .sale {
+            color: #fff;
+            text-align: center;
+            font-size: 13px;
+            width: 75px;
+            height: 20px; 
+            background-color: $red;
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+        }
+        .img {
+            padding-top: 20px;
+            text-align: center;
+        }
+        .data {
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            color: $gray;
+        }
+        .text {
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 14px;
+        }
+        .price {
+            padding-left: 10px;
+            padding-top: 5px;
+            font-weight: 600;
+            span {
+                padding-left: 5px;
+                font-weight: 400;
+                color: $gray;
+            }
+            .rub {
+                padding-left: 20px;
+            }
+        }
+        button.busket {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 130px;
+            height: 30px;
+            background-color: $violet;
+            text-align: center;
+            border-radius: 20px;
+            border: none; 
+            cursor: pointer;
+            img {
+                padding-left: 7px;
+                padding-top: 2px;
+            }
+            .text {
+                color: #fff;
+                margin-top: 0px;
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+
+
 
 
 
