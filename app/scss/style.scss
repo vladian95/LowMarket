@@ -321,7 +321,88 @@
     }
 }
 
+.product__stock-pictures {
+    display: flex;
+    padding-top: 20px;
+    .pictures {
+        padding-right: 30px;    
+    }
+}
 
+//about
+.about {
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    text-align: center;
+
+    .about__company {
+        &-title {
+
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 36px;
+            padding-bottom: 10px;
+        }
+        &-online {     
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            padding-bottom: 30px;
+        }
+        &-text { 
+            text-align: left;
+        }
+    }
+
+    .about__advantages {
+        padding: 50px 0; 
+        display: flex; 
+        justify-content: space-around;
+        &-block {
+            padding-right: 20px;
+        }
+        // .advantages-img {
+        //     width: 90px;
+        //     height: 90px;
+        //     border-radius: 50%;
+        //     background-color: rgba(250, 221, 221, 0.81);;
+        // }
+        .last-child {
+            padding-right: 0px;
+        }
+        .advantages-title {
+            font-weight: 700; 
+            padding: 10px 0;  
+        }
+        .title-marginTop{
+            margin-top: 7px;
+        }
+        .advantages-text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    button.more {
+        background-color: $violet;
+        color: #fff;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 130px;
+        height: 30px;
+        text-align: center;
+        border-radius: 20px;
+        border: none; 
+        cursor: pointer;
+        &:hover {
+            transition: 0.7s;
+            background-color: #578f53;
+        }
+    }
+}
 
 
 
