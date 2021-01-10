@@ -201,6 +201,79 @@
             }
         }
     }
+    .header__basket-box {
+        z-index: 2;
+        position: relative;
+
+        // &:hover {
+        //     height: auto;
+        //     overflow: hidden;
+        // }  // тут ошибка перепиши придумай чтото 
+        .basket__menu {
+            position: absolute;
+            top: 52px;
+            left: -129px;
+            width: 300px;
+            height: 415px; 
+            background-color: white;  
+            border-bottom-left-radius: 12px;
+            
+
+            .basket__item {
+
+            li {
+                padding: 0 10px;
+                border-bottom: 1px solid $green;
+                display: flex;
+                .delete-img {
+                    padding-top: 20px;   
+                }
+                span {
+                    width: 80px;
+                    margin-top: 20px;
+                }
+                .menu-btn__choice {
+                    padding-top: 19px;
+                    padding-left: 10px;
+                    a {
+                        &:hover,
+                        &:active {
+                            color: #000;
+                        }
+                    }
+                }
+                .basket__menu-price {
+                    color: $green;
+                    font-weight: 600;
+                    padding-top: 20px;
+                    padding-left: 25px;
+                }
+            }
+            &-price {
+                color: $green;   
+            }
+          }
+        }
+        .menu__btn {
+        text-align: center;
+        .btn__basket {
+                background-color: #578f53;
+                color: #fff;
+                margin: 20px 0;
+                margin-left: 20px;
+                width: 140px;
+                height: 30px;
+                border-radius: 20px;
+                border: none; 
+                cursor: pointer;
+                font-size: 14px;
+                &:hover {
+                    transition: 0.7s;
+                    background-color: $violet;
+                }
+            }
+        }
+    }
 }
 
 .main__background {
