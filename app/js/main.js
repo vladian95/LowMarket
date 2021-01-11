@@ -1,6 +1,5 @@
 $(function() {
     
-
 //Tabs(Card Page)    
 $('.wrapper .tab').on('click', function(event) {
     var id = $(this).attr('data-id');
