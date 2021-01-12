@@ -1088,6 +1088,107 @@
 
 
 //basket-unit
+.basket-blocks {
+    display: flex; 
+    justify-content: space-between;
+    .basket-tables {
+        border: 1px solid $gray;
+        border-radius: 12px;
+        box-shadow: 0px 1px 5px rgba(15,14,14,0.25);
+        padding: 20px;
+        width: 350px;
+        height: 400px;
+    }
+    .tables__input {
+        position: relative;
+        input {
+            min-width: 300px;
+            height: 30px;
+            padding: 20px;
+            border: 1px solid $gray;
+            border-radius: 24px;
+        }
+        button {
+            position: absolute;
+            top: 1px;
+            right: 0px;
+            background-color: $green;
+            border-radius: 24px;
+            border: none;
+            width: 75px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+    .tables__score {
+        padding-top: 30px;
+        &-min {
+            font-size: 17px;
+            span {
+               color: $green;
+               font-weight: 600;
+            }
+        }
+        &-line {
+            padding-top: 20px;
+            display: flex;
+            .toddler {
+                margin-left: 10px;
+                margin-top: 5px;
+                width: 270px;
+                height: 6px;
+                background-color: $gray;
+                border-radius: 12px;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 170px;
+                    height: 6px;
+                    background-color: $green;
+                    border-radius: 12px;
+                }
+            }
+        }
+        &-text {
+            text-align: center;
+            color: $gray;
+            // padding-bottom: 20px;
+        }
+    }
+    .tables__total {
+        &-text {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 24px;
+            color: $green;
+            font-weight: 600;
+            span {
+                color: #000;
+            }
+        }
+        &-button {
+            text-align: center;
+            padding-bottom: 20px;
+            button {
+            background-color: $gray;
+            border-radius: 24px;
+            border: none;
+            color: #fff;
+            width: 160px;
+            height: 40px;
+            cursor: pointer;
+        }
+       }
+    }
+    .tables__clean {
+        text-align: center;
+        span {
+            color: $gray; 
+            font-size: 17px;
+            padding-left: 5px;
+        }
+    }
+}
 .basket-chosen {
         border: 1px solid $gray;
         border-radius: 12px;
@@ -1095,29 +1196,28 @@
     li {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 10px;
         .delete-img {
-            margin-top: 20px;
+            margin-top: 15px;
+            padding-right: 11px;
         }
         .art {
             color: $gray;
         }
         .piece {
             color: $gray;
-            margin-top: 10px;
         }
         .price {
-            margin-top: 10px; 
             font-size: 26px;
             font-weight: 600;
             color: $green;
         }
         .btn__choice {
-            margin-top: 10px;
             padding-left: 30px;
             display: flex;
         }
         .num {
-            padding: 0 60px;
+            padding: 0 10px;
             margin-top: 5px;
             font-size: 22px;
         }
