@@ -1013,7 +1013,7 @@
         span {
             padding-left: 10px;
             font-size: 14px;
-            color: $gray;
+            // color: $gray;
             font-weight: 400;
         }
     }
@@ -1022,7 +1022,7 @@
         
         .change-block {
             margin-left: 100px;
-            width: 100px;
+            width: 120px;
             height: 30px;
             border: 1px solid $gray;
             background-color: #fff;
@@ -1030,26 +1030,39 @@
             text-align: center;
             border-radius: 24px;
             cursor: pointer;
-
-           
+            .word {
+                position: relative;
+                img {
+                    position: relative;
+                    top: -3px;
+                    left: 5px;
+                } 
+                a.done {
+                        color: $green;
+                }
+            }
             &:hover {
                 transition: 0.7s;
                 background-color: $green;
+                color: #fff;
+            }
+            &__green {
+                border: 1px solid $green;
                 color: #fff;
             }
         }
         .order-block {
             width: 200px;
             position: relative;
-            &::before {
-                content: '';
-                width: 99px;
-                height: 1px;
-                background-color: $gray;
-                position: absolute;
-                left: 200px;
-                top: 20px;
-            }
+            // &::before {
+            //     content: '';
+            //     width: 99px;
+            //     height: 1px;
+            //     background-color: $gray;
+            //     position: absolute;
+            //     left: 200px;
+            //     top: 20px;
+            // }
         }
         .confirm-block {
             width: 160px;
@@ -1072,17 +1085,19 @@
         a {
             color: #fff;
         }
-        &::before {
-            content: '';
-            width: 102px;
-            height: 1px;
-            background-color: $gray;
-            position: absolute;
-            left: 98px;
-            top: 20px;
-        }
+        // &::before {
+        //     content: '';
+        //     width: 102px;
+        //     height: 1px;
+        //     background-color: $gray;
+        //     position: absolute;
+        //     left: 98px;
+        //     top: 20px;
+        // }
     }
 }
+
+
 
 }
 
@@ -1227,4 +1242,103 @@
 .basket__navigation-arrows {
     padding-top: 30px;
     text-align: center;
+}
+
+
+//registration
+
+.registration__block {
+    display: flex;
+    justify-content: space-between;
+
+    .personal__data {
+        .title {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        .form__user {
+            form {
+                display: flex;
+                .block-user {
+                    padding-right: 40px;
+                }
+                .form__user-name {
+                    padding-bottom: 20px;
+                }
+                .form__user-telephone {
+                    padding-bottom: 20px;
+                }
+                .heading {
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                    padding-left: 25px;
+                }
+                input {
+                    width: 370px;
+                    height: 40px;
+                    border-radius: 24px;
+                    border: 1px solid $gray;
+                    padding-left: 20px;
+                    outline: none;
+                    &:focus {
+                        border: 1px solid $green;
+                        color: $green;
+                       }
+                    &:active {
+                        border: 1px solid $green;
+                    } 
+                }
+            }
+        }
+    }
+
+    .delivery__method {
+        padding-top: 40px;
+        .title {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        .method {
+            &-text {
+                margin-left: 30px;
+            }
+        }
+
+        .method-input {
+            form {
+                display: flex;
+            }
+            &__block {
+                width: 170px;
+                height: 40px;
+                border-radius: 24px;
+                border: 1px solid $gray;
+            }
+            input {
+                margin-top: 12px;
+                margin-left: 30px;
+            }
+            input[type="checkbox"] {
+                background-color: red;
+            }
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .delivery__address {
+        padding-top: 40px;
+        .title {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+    }
+
 }
