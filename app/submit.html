@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Submit</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
@@ -297,7 +297,7 @@
        <div class="indication__section"> 
          <div class="indication__section-item">
              <div class="title">
-                Оформление заказа 
+                Подтверждение 
              </div>
          </div>
          <div class="indication__section-change">
@@ -309,13 +309,14 @@
                  </div>
              </div>
  
-             <div class="change-block order-block active">
+             <div class="change-block order-block change-block__green ">
                  <div class="word">
-                     <a href="#">Оформление заказа</a>
+                     <a class="done" href="#">Оформление заказа</a>
+                     <!-- <img class="check" src="img/registration/check.png" alt="check"> -->
                  </div> 
              </div>
  
-             <div class="change-block confirm-block">
+             <div class="change-block confirm-block active">
                  <div class="word">
                      <a href="#">Подтверждение</a>
                  </div> 
@@ -327,220 +328,49 @@
        </div>
     </div>
 
-    <section class="registration">
+    <section class="order">
         <div class="container">
-            <div class="registration__block">
-                <div class="registration__block-data">
-                      <div class="personal__data">
-                        <div class="title">Личные данные</div>
-                        <div class="form__user">
-                            <form>
-                               <div class="block-user">
-                                <div class="form__user-name">
-                                    <div class="heading">Имя*</div>
-                                    <input type="text" placeholder="Наталия">
-                                </div>  
-                                
-                                <div class="form__user-secondname">
-                                    <div class="heading">Фамилия*</div>
-                                    <input type="text">
-                                </div> 
-                               </div>  
-
-                            <div class="block-data">
-                                <div class="form__user-telephone">
-                                    <div class="heading">Телефон*</div>
-                                    <input type="number" placeholder="+7 (___) ___-__-__" >
-                                </div> 
-
-                                <div class="form__user-mail">
-                                    <div class="heading">E-mail*</div>
-                                    <input type="text" placeholder="Введите свой e-mail">
-                                </div> 
-                            </div>       
-
-                            </form>
-                        </div>
-                    </div>
-                    <div class="delivery__method">
-                        <div class="title">
-                            Способ доставки
-                        </div>
-                        <div class="method">
-                            <div class="method-text">
-                                Выберите удобный способ доставки
-                            </div>
-                            <div class="method-input">
-                                <form>
-                                   <div class="method-input__block">
-                                       <input type="checkbox"> <span>Доставка</span> 
-                                   </div> 
-
-                                   <div class="method-input__block">
-                                    <input type="checkbox"checked> <span>Самовывоз</span> 
-                                  </div> 
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="delivery__address">
-                        <div class="title">
-                            Адрес доставки
-                        </div>
-                        <div class="address">
-                            
-                            <div class="address">
-                                <form>
-
-                                  <div class="address-block"> 
-                                    <div class="address-text">
-                                        Город, улица, дом*
-                                    </div>
-                                   <div class="address-input__block">
-                                       <input id="city" type="text"> 
-                                    </div>
-                                  </div> 
-                                  
-                                  <div class="address-block"> 
-                                    <div class="address-text">
-                                        Корпус
-                                    </div>
-                                   <div class="address-input__block">
-                                       <input id="corpuse" type="number"> 
-                                    </div>
-                                  </div>
-
-                                  <div class="address-block"> 
-                                    <div class="address-text">
-                                        Квартира
-                                    </div>
-                                   <div class="address-input__block">
-                                       <input id="flat" type="number"> 
-                                    </div>
-                                  </div>
-
-                                  <div class="address-block"> 
-                                    <div class="address-text">
-                                        Домофон
-                                    </div>
-                                   <div class="address-input__block">
-                                       <input id="intercom" type="number"> 
-                                    </div>
-                                  </div>
-
-                                  <div class="address-block"> 
-                                    <div class="address-text">
-                                        Подъезд 
-                                    </div>
-                                   <div class="address-input__block">
-                                       <input id="entrance" type="number"> 
-                                    </div>
-                                  </div>
-
-                                 </form>
-                                 <div class="address__choice">
-                                     <img src="img/main/Gps.png" alt="Gps">
-                                     <a href="#">
-                                         <span>Выбрать из сохраненных адресов</span>
-                                     </a>
-                                 </div>
-                            </div> 
-                          </div> 
-                    </div>   
-                   <div class="date__time">
-
-                        <div class="title">
-                            Дата и время доставки
-                        </div>
-                     <div class="date__calendar-block">
-                        <div class="date__calendar">
-                            <div class="word">Выберите дату*</div> 
-                        
-                        <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FKiev&amp;src=a2lzZnJlZTc3N0BnbWFpbC5jb20&amp;src=dG9naHZuMDZvYWI0Nzk1YWo4bGFob3FmdGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%23B39DDB&amp;color=%2333B679&amp;showTitle=0&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=0&amp;showNav=0" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
-                        </div>
-                        <div class="date__block">
-                            <div class="word">
-                                Выберите время*
-                            </div>
-                            <div class="date__input">
-                                <div class="date-input__block">
-                                    <input type="checkbox"> <span>9:00 - 12:00</span> 
-                                  </div>
-
-                                  <div class="date-input__block">
-                                    <input type="checkbox"> <span>12:00 - 15:00</span> 
-                                  </div>
-
-                                  <div class="date-input__block">
-                                    <input type="checkbox"> <span>15:00 - 17:00</span> 
-                                  </div>
-
-                                  <div class="date-input__block">
-                                    <input type="checkbox"checked> <span>17:00 - 19:00</span> 
-                                  </div>
-
-                                  <div class="date-input__block">
-                                    <input type="checkbox"> <span>19:00 - 21:00</span> 
-                                  </div>
-
-                            </div>
-                        </div>
-                    </div>      
-
-                   </div> 
-                    <div class="payment">
-                        <div class="title">
-                            Способ оплаты
-                            <div class="payment__method">
-                                <div class="payment-text">
-                                    Выберите удобный способ оплаты*
-                                </div>
-                                <div class="payment-card">
-                                    <div class="payment-card__input">
-                                        <input type="checkbox" checked>
-                                        Наличными или картой курьеру
-                                    </div>
-                                    <div class="payment-card__input payment-card__input--two">
-                                        <input type="checkbox" >
-                                        Оплата картой онлайн
-                                        <img src="img/registration/banks__cards.png" alt="banks__cards">
-                                    </div>    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="comment">
-                        <div class="title">
-                            Комментарий
-                        </div> 
-                        <div class="comment__method">
-                            <div class="comment-text">
-                                Укажите особенности или пожелания по доставке
-                            </div>
-                            <form >
-                                <textarea name="comment__textarea" id="comment__textarea" cols="90" rows="10"></textarea>
-                            </form>  
-                            <div class="text">
-                                * Звездочкой отмечены обязательные для заполнения поля.
-                            </div>
-                          </div>  
-                    </div>  
-              
+          <div class="order-block">
+            <div class="order__main">
+                <div class="order__main-img">
+                    <img src="img/submit/submit.png" alt="submit">
                 </div>
-                <div class="registration__block-total">
-                     <div class="total__number">
-                        Итого: <span>12 235 ₽</span>
-                     </div>
-                     <div class="cost__item">
-                        Стоимость товаров: <span>12 235 ₽</span>
-                        Стоимость доставки: <span>0 </span>
-                     </div>
-                     <div class="button__done">
-                        <button type="submit">Оформить заказ</button>
-                     </div>
+                <div class="order__main-title">
+                    Спасибо за заказ <span>№238727</span> 
                 </div>
-            </div> 
+                <div class="order__main-text">
+                    В ближайшее время наш менеджер свяжется с Вами для подтверждения заказа.
+                </div>
+            </div>
+
+            <div class="order__info">
+                <div class="order__info-title">
+                    Информация о заказе
+                </div>
+                <div class="order__info-calc">
+                    Стоимость товаров: 6 245 ₽ <br>
+                    Стоимость доставки: 0 ₽
+                    <br>
+                    Итого: 6 245 ₽ 
+                </div>
+                <div class="order__info-data">
+                    Имя: Анастасия <br>
+                    Фамилия: Иванова <br>
+                    Телефон: +7 (916) 927-39-38 <br>
+                    E-mail: ivanova@mail.ru
+                </div>
+                <div class="order__info-delivery">
+                    Доставка: Москва, Дмитровское шоссе,<br> дом 169, 
+                    корпус 10, квартира 380    
+                </div>
+                <div class="order__info-time">
+                    Дата и время: 26.07.2019, 12:00 – 15:00
+                </div>
+                <div class="order__info-payment">
+                    Способ оплаты: оплата картой онлайн
+                </div>
+            </div>
+          </div>   
         </div>
     </section>
   
@@ -608,7 +438,7 @@
               </div>     
           </div>
         </div> 
-    </footer> 
+      </footer> 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

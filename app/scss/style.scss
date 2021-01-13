@@ -1054,15 +1054,6 @@
         .order-block {
             width: 200px;
             position: relative;
-            // &::before {
-            //     content: '';
-            //     width: 99px;
-            //     height: 1px;
-            //     background-color: $gray;
-            //     position: absolute;
-            //     left: 200px;
-            //     top: 20px;
-            // }
         }
         .confirm-block {
             width: 160px;
@@ -1077,6 +1068,7 @@
                 color: #fff;    
             }
         }
+
     }
     .change-block.active {
         background-color: $green;
@@ -1246,7 +1238,6 @@
 
 
 //registration
-
 .registration__block {
     display: flex;
     justify-content: space-between;
@@ -1562,16 +1553,53 @@
 }
 
 
+// order
+.order-block {
+    display: flex;
+}
+.order__main {
+    max-width: 770px;
+    border-radius: 24px;
+    border: 1px solid $gray;
+    padding: 100px;
+    text-align: center;
+    &-title {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        span {
+            color: $green;
+        }
+    }
+    &-text {
+        font-size: 14px;
+    }
+}
 
-            //     background-color: $light-green;
+.order__info {
+    margin-left: 80px;
+    border-radius: 24px;
+    border: 1px solid $gray;
+    max-width: 3630px;
+    padding: 30px;
+    // padding-bottom: 0;
+    &-title {
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    &-calc {
+        padding-bottom: 20px;
+    }
+    &-data {
+        padding-bottom: 20px;
+    }
+    &-delivery {
+        padding-bottom: 20px;        
+    }
+    &-time {
+        padding-bottom: 20px;    
+    }
 
-            //     width: 100px;
-            //     height: 35px;
-            //     border-radius: 16px;
-            //     border: none;
-            //     outline: none;
-            //     cursor: pointer;
-            //     &:focus {
-            //         border: 1px solid $light-green;
-            //     }
-            // }
+}
