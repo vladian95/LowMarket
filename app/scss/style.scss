@@ -1291,6 +1291,7 @@
                     } 
                 }
             }
+           
         }
     }
 
@@ -1309,6 +1310,7 @@
         }
 
         .method-input {
+            
             form {
                 display: flex;
             }
@@ -1317,6 +1319,9 @@
                 height: 40px;
                 border-radius: 24px;
                 border: 1px solid $gray;
+                &:last-child {
+                    margin-left: 20px;
+                }
             }
             input {
                 margin-top: 12px;
@@ -1339,6 +1344,234 @@
             font-weight: 600;
             padding-bottom: 20px;
         }
+        .address {
+                form {
+                    display: flex;
+                    font-size: 14px;
+                    .address-block {
+                        margin-left: 40px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        .address-text {
+                            margin-left: 14px;
+                        }
+                    }
+                    #city {
+                        width: 370px;
+                        height: 40px;
+                        border-radius: 24px;
+                        border: 1px solid $gray;
+                        margin-left: 0px;
+                    }
+                    #corpuse {
+                        width: 70px;
+                        height: 40px;
+                        border-radius: 24px;
+                        border: 1px solid $gray;
+                    }
+                    #flat {
+                        width: 70px;
+                        height: 40px;
+                        border-radius: 24px;
+                        border: 1px solid $gray;
+                    }
+                    #intercom {
+                        width: 70px;
+                        height: 40px;
+                        border-radius: 24px;
+                        border: 1px solid $gray;
+                    }
+                    #entrance {
+                        width: 70px;
+                        height: 40px;
+                        border-radius: 24px;
+                        border: 1px solid $gray;
+                    }
+                    input {
+                        padding-left: 20px;
+                        outline: none;
+                        &:focus {
+                            border: 1px solid $green;
+                            color: $green;
+                           }
+                        &:active {
+                            border: 1px solid $green;
+                        } 
+                    }
+            }
+            .address__choice {
+                padding-top: 20px;
+                margin-left: 20px;
+                a {
+                    color: $green;
+                    border-bottom: 1px dotted $green;
+                }
+            }
+        }
+    }
+
+    .date__time {
+        padding-top: 40px;
+        .title {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        .date__calendar-block {
+            display: flex;
+        }
+        .date__calendar {
+            .word {
+                padding-left: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        .date__block {
+            padding-left: 30px;
+            padding-top: 120px;
+            .word {
+                text-align: center;
+            }
+        }
+        .date-input__block {
+            margin-top: 20px;
+            width: 170px;
+            height: 40px;
+            border-radius: 24px;
+            border: 1px solid $gray;
+            input {
+                margin-top: 13px;
+                margin-left: 30px;
+            }
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .payment {
+        padding-top: 40px;
+        .title {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        .payment__method {
+            padding-top: 10px;
+            padding-left: 20px;
+            .payment-text {
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 20px;
+            }
+            .payment-card {
+                display: flex;
+                .payment-card__input--two {
+                    margin-left: 30px;
+                }
+                &__input {
+                    font-size: 14px;
+                    font-weight: 400;
+                    width: 370px;
+                    padding-top: 9px;
+                    padding-left: 50px;
+                    height: 40px;
+                    border-radius: 24px;
+                    border: 1px solid $gray;
+                    outline: none;
+                }
+            }
+        }
+    }    
+
+    .comment {
+        padding-top: 40px;
+        .title {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding-bottom: 20px;
+        } 
+        .comment-text {
+            padding-left: 20px;
+        }
+        textarea {
+            border-radius: 24px;
+            border: 1px solid $gray;
+            outline: none;
+            padding-left: 20px;
+            padding-top: 10px;
+            color: $green;
+            resize: none; 
+        }
+        .text {
+            padding-top: 30px;
+            padding-left: 20px;
+            color: $gray;
+        }
+    }
+
+    &-total {
+        border-radius: 24px;
+        border: 1px solid $gray;
+        width: 300px;
+        height: 250px;
+        text-align: center;
+        padding: 20px 0;
+        .total__number {
+            padding-bottom: 20px;
+            font-size: 24px;
+            color: $green;
+            font-weight: 600;
+            span {
+                color: #000;
+            }
+        }
+        .cost__item{
+            padding: 20px 0;
+            border-bottom: 1px solid $gray;
+            border-top: 1px solid $gray;
+            span {
+                font-size: 16px;
+                color: $green;
+                font-weight: 600;
+            }
+        }
+        .button__done {
+            margin-top: 30px;
+           button {
+                background-color: $green;
+                width: 140px;
+                height: 35px;
+                border-radius: 16px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: #fff;
+                &:hover {
+                    border: 1px solid $light-green;
+                }
+            }
+
+        }
     }
 
 }
+
+
+
+            //     background-color: $light-green;
+
+            //     width: 100px;
+            //     height: 35px;
+            //     border-radius: 16px;
+            //     border: none;
+            //     outline: none;
+            //     cursor: pointer;
+            //     &:focus {
+            //         border: 1px solid $light-green;
+            //     }
+            // }

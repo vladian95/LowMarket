@@ -331,7 +331,7 @@
         <div class="container">
             <div class="registration__block">
                 <div class="registration__block-data">
-                    <div class="personal__data">
+                      <div class="personal__data">
                         <div class="title">Личные данные</div>
                         <div class="form__user">
                             <form>
@@ -378,7 +378,7 @@
 
                                    <div class="method-input__block">
                                     <input type="checkbox"checked> <span>Самовывоз</span> 
-                                </div> 
+                                  </div> 
 
                                 </form>
                             </div>
@@ -388,25 +388,157 @@
                         <div class="title">
                             Адрес доставки
                         </div>
-                    </div>
-                    <!-- <div class="date__time">
+                        <div class="address">
+                            
+                            <div class="address">
+                                <form>
+
+                                  <div class="address-block"> 
+                                    <div class="address-text">
+                                        Город, улица, дом*
+                                    </div>
+                                   <div class="address-input__block">
+                                       <input id="city" type="text"> 
+                                    </div>
+                                  </div> 
+                                  
+                                  <div class="address-block"> 
+                                    <div class="address-text">
+                                        Корпус
+                                    </div>
+                                   <div class="address-input__block">
+                                       <input id="corpuse" type="number"> 
+                                    </div>
+                                  </div>
+
+                                  <div class="address-block"> 
+                                    <div class="address-text">
+                                        Квартира
+                                    </div>
+                                   <div class="address-input__block">
+                                       <input id="flat" type="number"> 
+                                    </div>
+                                  </div>
+
+                                  <div class="address-block"> 
+                                    <div class="address-text">
+                                        Домофон
+                                    </div>
+                                   <div class="address-input__block">
+                                       <input id="intercom" type="number"> 
+                                    </div>
+                                  </div>
+
+                                  <div class="address-block"> 
+                                    <div class="address-text">
+                                        Подъезд 
+                                    </div>
+                                   <div class="address-input__block">
+                                       <input id="entrance" type="number"> 
+                                    </div>
+                                  </div>
+
+                                 </form>
+                                 <div class="address__choice">
+                                     <img src="img/main/Gps.png" alt="Gps">
+                                     <a href="#">
+                                         <span>Выбрать из сохраненных адресов</span>
+                                     </a>
+                                 </div>
+                            </div> 
+                          </div> 
+                    </div>   
+                   <div class="date__time">
+
                         <div class="title">
                             Дата и время доставки
                         </div>
-                    </div>
+                     <div class="date__calendar-block">
+                        <div class="date__calendar">
+                            <div class="word">Выберите дату*</div> 
+                        
+                        <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FKiev&amp;src=a2lzZnJlZTc3N0BnbWFpbC5jb20&amp;src=dG9naHZuMDZvYWI0Nzk1YWo4bGFob3FmdGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%23B39DDB&amp;color=%2333B679&amp;showTitle=0&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=0&amp;showNav=0" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                        <div class="date__block">
+                            <div class="word">
+                                Выберите время*
+                            </div>
+                            <div class="date__input">
+                                <div class="date-input__block">
+                                    <input type="checkbox"> <span>9:00 - 12:00</span> 
+                                  </div>
+
+                                  <div class="date-input__block">
+                                    <input type="checkbox"> <span>12:00 - 15:00</span> 
+                                  </div>
+
+                                  <div class="date-input__block">
+                                    <input type="checkbox"> <span>15:00 - 17:00</span> 
+                                  </div>
+
+                                  <div class="date-input__block">
+                                    <input type="checkbox"checked> <span>17:00 - 19:00</span> 
+                                  </div>
+
+                                  <div class="date-input__block">
+                                    <input type="checkbox"> <span>19:00 - 21:00</span> 
+                                  </div>
+
+                            </div>
+                        </div>
+                    </div>      
+
+                   </div> 
                     <div class="payment">
                         <div class="title">
                             Способ оплаты
+                            <div class="payment__method">
+                                <div class="payment-text">
+                                    Выберите удобный способ оплаты*
+                                </div>
+                                <div class="payment-card">
+                                    <div class="payment-card__input">
+                                        <input type="checkbox" checked>
+                                        Наличными или картой курьеру
+                                    </div>
+                                    <div class="payment-card__input payment-card__input--two">
+                                        <input type="checkbox" >
+                                        Оплата картой онлайн
+                                        <img src="img/registration/banks__cards.png" alt="banks__cards">
+                                    </div>    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment">
+                     <div class="comment">
                         <div class="title">
                             Комментарий
-                        </div>   
-                    </div> -->
+                        </div> 
+                        <div class="comment__method">
+                            <div class="comment-text">
+                                Укажите особенности или пожелания по доставке
+                            </div>
+                            <form >
+                                <textarea name="comment__textarea" id="comment__textarea" cols="90" rows="10"></textarea>
+                            </form>  
+                            <div class="text">
+                                * Звездочкой отмечены обязательные для заполнения поля.
+                            </div>
+                          </div>  
+                    </div>  
+              
                 </div>
                 <div class="registration__block-total">
-                    ИТОГО 
+                     <div class="total__number">
+                        Итого: <span>12 235 ₽</span>
+                     </div>
+                     <div class="cost__item">
+                        Стоимость товаров: <span>12 235 ₽</span>
+                        Стоимость доставки: <span>0 </span>
+                     </div>
+                     <div class="button__done">
+                        <button type="submit">Оформить заказ</button>
+                     </div>
                 </div>
             </div> 
         </div>
