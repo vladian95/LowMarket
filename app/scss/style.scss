@@ -395,6 +395,12 @@
             border-radius: 10px;
             border-bottom-left-radius: 0px;
         }
+        .compare__sale {
+            background-color: $orange;
+            &-none {
+                background-color: #fff;
+            }
+        }
         .orange_hit {
             background-color: $orange;
         }
@@ -1625,6 +1631,7 @@
     display: flex;
     &-menu {
         width: 370px;
+        height: 540px;
         border-radius: 24px;
         border: 1px solid $gray;
         padding: 20px 30px;
@@ -1659,4 +1666,41 @@
             }
         }
     } 
+    &-about {
+        margin-top: -50px;
+
+        .information {
+            padding-left: 50px;
+
+            .title {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 600;
+                padding-bottom: 20px;
+            }
+            &-item__list {
+                padding-top: 10px;   
+                display: flex; 
+                justify-content: space-between;
+                border-bottom: 1px solid $gray;
+                &:last-child {
+                    border-bottom: none;
+                }
+                a {
+                    color: $green;
+                }      
+            }
+        }
+        .information-storage {
+            padding-top: 40px;
+        }
+        .information-value {
+            padding-top: 40px;
+        }
+        .information-structure {
+            padding-top: 40px;
+            text-align: left;
+        }
+    }
+    
 }
