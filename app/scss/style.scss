@@ -1819,12 +1819,9 @@
 //cabinet
 .cabinet__blocks {
     &-btns {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid $gray;
+        display: block;
         .block-btns {
             display: flex;
-
             button {
                 width: 270px;
                 height: 60px;
@@ -1844,6 +1841,7 @@
 
         }
         .btn-exit {
+            padding-left: 150px;
             margin-top: 15px;
             color: $gray;
             cursor: pointer;
@@ -1904,7 +1902,6 @@
                 }
             }
         }
-
         .profile__password {
             padding-bottom: 20px;
             border-bottom: 1px solid $gray;
@@ -1958,5 +1955,66 @@
             }
         }
     
+        .history {
+            .history__list {
+                padding-top: 30px;
+                ul {
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid $gray;
+                        padding-bottom: 20px;
+                        padding-top: 20px;
+                        a {
+                            font-weight: 600;
+                            color: #000;
+                        }
+                        button {
+                            margin-top: -10px;
+                            cursor: pointer;
+                            width: 180px;
+                            height: 40px;
+                            outline: none;
+                            border-radius: 24px;
+                            border: 1px solid $green;
+                        }
+                        .process {
+                            color: $green;
+                        }
+                        .reapet {
+                            color: #fff;
+                            background-color: $green;
+                        }
+                    }
+                }
+            }
+            .history-arrows {
+                text-align: center;
+            } 
+        }
+
+        .saved {
+            .saved__list {
+                padding-top: 10px;
+                padding-bottom: 110px;
+                ul {
+                    li {
+                        padding-left: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid $gray;
+                        padding-bottom: 20px;
+                        padding-top: 20px;
+                        a {
+                            font-weight: 600;
+                            color: #000;
+                        }
+                    }
+                }
+                .place {
+                    font-weight: 600;
+                }
+            }
+        }
 }
 
