@@ -1648,6 +1648,15 @@
                 font-size: 17px;
             }
         }
+        .first__word {
+            font-weight: 600;
+            a:hover { 
+                cursor: none;
+                color: #000;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
     } 
     .compare-list__button {
         border-top: 1px solid $gray;
@@ -1704,3 +1713,104 @@
     }
     
 }
+
+
+//favorites
+.favorites__blocks {
+    display: flex;  
+
+.favorites-blocks-menu {
+    height: 780px;
+
+    .favorites-list__menu {
+        border-bottom: 1px solid $gray;
+        padding-bottom: 10px;
+    }
+    .favorites-list__menu-category {
+        padding-top: 20px;
+        border-bottom: 1px solid $gray;
+
+        li {
+            cursor: pointer;
+            span {
+                padding-left: 10px;
+            }
+        }
+        .brand {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    .favorites-list__button {
+        padding-top: 30px;
+        text-align: center;
+        button {
+            border: none;
+            color: $green;
+            outline: none;
+            cursor: pointer;
+            border-bottom: 2px dotted $green;
+            &::before {
+                content: 'X';
+                padding-right: 5px;
+                color: $green;
+            }
+        }
+    }
+}
+
+&-item {
+
+    .favorites__nav {
+        display: flex;
+        justify-content: space-between;
+        &-btn {
+            display: flex;
+            padding-left: 40px;
+            button {
+                   margin-right: 30px;
+                    background-color: $green;
+                    border-radius: 24px;
+                    border: none;
+                    color: #fff;
+                    width: 160px;
+                    height: 40px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $violet;
+                        transition: .5s;
+                    }
+            }
+        }
+        &-delete {
+            margin-top: 10px;
+            cursor: pointer;
+            color: $gray;
+            span {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .favorites__navigation {
+
+            button.more {
+                    margin: 20px 0;  
+                    background-color: $violet;
+                    color: #fff;
+                    width: 130px;
+                    height: 32px;
+                    border-radius: 20px;
+                    border: none; 
+                    font-size: 14px;     
+                    cursor: pointer;
+                    &:hover {
+                        transition: 0.7s;
+                        background-color: #578f53;
+                    }
+        }
+    }
+}
+
+}
+
