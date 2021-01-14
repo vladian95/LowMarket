@@ -1814,3 +1814,149 @@
 
 }
 
+
+
+//cabinet
+.cabinet__blocks {
+    &-btns {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray;
+        .block-btns {
+            display: flex;
+
+            button {
+                width: 270px;
+                height: 60px;
+                color: #000;
+                background-color: white;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                border: 1px solid $gray;
+                outline: none;
+                cursor: pointer;
+                
+            }
+            button.active {
+                color: #fff;
+                background-color: $green;
+            }
+
+        }
+        .btn-exit {
+            margin-top: 15px;
+            color: $gray;
+            cursor: pointer;
+            span {
+                border-bottom: 2px dotted $gray;
+
+            }
+        }
+    }
+    .profile {
+
+        .profile__data {
+            padding: 20px 0;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .profile__data-inputs {
+            padding-top: 20px;
+            form {
+                display: flex;
+            }
+                .profile__input {
+                    padding-right: 30px;
+                    .heading {
+                        padding-left: 15px;
+                    }
+                    input {
+                        color: $green;
+                        outline: none;
+                       padding-left: 20px;
+                       border-radius: 24px;
+                       width: 270px;
+                       height: 40px;
+                       border: 1px solid $gray;  
+                       margin-bottom: 20px;
+                    }
+                }
+            }
+            .profile-gender{
+                .name {
+                    padding-left: 20px;
+                }
+                .profile-gender__male,
+                .profile-user__female {
+                           padding-left: 20px;
+                           border-radius: 24px;
+                           width: 270px;
+                           height: 40px;
+                           border: 1px solid $gray;  
+                           margin-bottom: 20px;
+                }
+                .profile-user__female {
+                    margin-top: 47px;
+                }
+            }
+        }
+
+        .profile__password {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $gray;
+        }
+        .profile__password__input {
+            
+            .profile-password__new-block {
+                display: flex;
+            } 
+            .profile-password__repeat {
+                padding-left: 30px;
+            }
+            .profile-password__now,
+            .profile-password__new,
+            .profile-password__repeat {
+                padding-top: 30px;
+                .heading {
+                    padding-left: 20px;
+                }
+               
+                input {
+                    color: $green;
+                    outline: none;
+                    padding-left: 20px;
+                    border-radius: 24px;
+                    width: 270px;
+                    height: 40px;
+                    border: 1px solid $gray;  
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .profile__btn {
+            padding-top: 20px;
+            text-align: center;
+            button {
+                outline: none;
+                margin-right: 30px;
+                background-color: $green;
+                border-radius: 24px;
+                border: none;
+                color: #fff;
+                width: 200px;
+                height: 40px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $violet;
+                    transition: .5s;
+                }
+
+            }
+        }
+    
+}
+
