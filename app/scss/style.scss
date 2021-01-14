@@ -1005,7 +1005,23 @@
 .indication__section {
     display: flex;
     justify-content: space-between;
-    
+    position: relative;
+    .indication__compare-item {
+        display: flex;
+        .indication__section-item--arrows {
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            .right {
+                cursor: pointer;
+                padding-left: 30px;
+            }
+            .left {
+                cursor: pointer;
+            }
+        }
+    }
     .title {
         font-size: 24px;
         font-weight: 600;
@@ -1013,7 +1029,6 @@
         span {
             padding-left: 10px;
             font-size: 14px;
-            // color: $gray;
             font-weight: 400;
         }
     }
@@ -1602,4 +1617,46 @@
         padding-bottom: 20px;    
     }
 
+}
+
+
+//compare
+.compare__blocks {
+    display: flex;
+    &-menu {
+        width: 370px;
+        border-radius: 24px;
+        border: 1px solid $gray;
+        padding: 20px 30px;
+
+        li {
+            padding-bottom: 10px;
+            a {
+                color: #000;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: $green;
+                transition: 0.5s;
+                font-size: 17px;
+            }
+        }
+    } 
+    .compare-list__button {
+        border-top: 1px solid $gray;
+        padding-top: 20px;
+        text-align: center;
+        button {
+            border: none;
+            color: $green;
+            outline: none;
+            cursor: pointer;
+            border-bottom: 2px dotted $green;
+            &::before {
+                content: 'X';
+                padding-right: 5px;
+                color: $violet;
+            }
+        }
+    } 
 }
