@@ -97,7 +97,6 @@
             .navigation-drop__down {
                 height: auto;  
                 border-width: 1px;
-                // padding: 20px;
                 overflow: auto;           
             }           
         }
@@ -152,6 +151,7 @@
                     font-size: 14px;
                     font-weight: 500;
                     outline: none;
+                    color: $green;
                     &:focus {
                         border: 1px solid $light-green;
                     }
@@ -204,21 +204,21 @@
     .header__basket-box {
         z-index: 2;
         position: relative;
-
-        // &:hover {
-        //     height: auto;
-        //     overflow: hidden;
-        // }  // тут ошибка перепиши придумай чтото 
+        &:hover {
+            .basket__menu {
+                height: auto;
+                overflow: auto;
+            }
+        }  
         .basket__menu {
             position: absolute;
             top: 52px;
             left: -129px;
             width: 300px;
-            height: 415px; 
+            height: 0; 
+            overflow: hidden;
             background-color: white;  
             border-bottom-left-radius: 12px;
-            
-
             .basket__item {
 
             li {
@@ -348,6 +348,7 @@
 .product__stock {
     padding: 30px 0;
     &-block {
+        padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
         .block-stock__title {
@@ -360,7 +361,7 @@
             .show-all {
                 font-weight: 600;
                 color: #000;
-                padding-right: 20px;
+                padding-right: 50px;
                 margin-top: -2px;
             }
             .show-controls {
@@ -459,13 +460,41 @@
     }
 }
 
+.product__stock-block {
+    position: relative;
+}
+
 .product__stock-pictures {
-    display: flex;
-    padding-top: 20px;
+    
     .pictures {
         padding-right: 30px;    
     }
 }
+.product__slider-inner {
+    .slick-prev.slick-arrow {
+        position: absolute;
+        top: -44px;
+        right: 28px;
+        cursor: pointer;
+        height: 20px;
+        border: none;
+        outline: none;
+        background-repeat: no-repeat;
+        background-image: url(../img/main/left-arrow.png);
+    }
+    .slick-next.slick-arrow {
+        position: absolute;
+        top: -44px;
+        right: 7px;;
+        cursor: pointer;
+        height: 20px;
+        border: none;
+        outline: none;
+        background-repeat: no-repeat;
+        background-image: url(../img/main/right-arrow.png);
+    }
+}
+
 
 //about
 .about {
@@ -2018,3 +2047,74 @@
         }
 }
 
+
+//modal
+#modal {
+    display: none;
+}
+.modal {
+    width: 430px;
+    height: 470px;
+    border-radius: 24px;
+    border: 1px solid $gray;
+    .modal__title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        color: $green;
+    }
+    .modal__inputs {
+        .data {
+            padding-left: 20px;
+        }
+        .pass {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        input {
+            width: 330px;
+            height: 40px;
+            padding-left: 20px;
+            color: $green; 
+            outline: none;
+            border-radius: 24px;
+            border: 1px solid $gray;    
+        }
+    }
+    .modal__reminder {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        &-input {
+
+            span {
+                padding-left: 10px;
+            }
+        }
+        .forgot__pass {
+            color: $green;
+            border-bottom: 2px dotted $green;
+        }
+    }
+    .modal__btn {
+        text-align: center;
+        padding-top: 50px;
+        button {
+            outline: none;
+            background-color: $green;
+            border-radius: 24px;
+            border: none;
+            color: #fff;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            &:hover {
+                background-color: $violet;
+                transition: .5s;
+            }
+
+        }
+    }
+}

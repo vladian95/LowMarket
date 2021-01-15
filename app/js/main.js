@@ -1,4 +1,20 @@
 $(function() {
+
+//product__slider-inner (Index Page)   
+$('.product__slider-inner').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false
+});
+
+let slickBtnLeft = document.querySelector('.slick-prev.slick-arrow');
+slickBtnLeft.textContent = '';
+
+let slickBtnRight = document.querySelector('.slick-next.slick-arrow');
+slickBtnRight.textContent = '';
+
+//
     
 //Tabs(Card Page)    
 $('.wrapper .tab').on('click', function(event) {

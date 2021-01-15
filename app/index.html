@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-     <header class="header"> 
+     <!-- <header class="header"> 
         <div class="container">
 
             <div class="header__contacts">
@@ -35,7 +35,7 @@
 
             <div class="header__main">
                 <div class="header__main-logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="img/main/logo.png" alt="logo" width="90px">
                     </a>
                 </div>
@@ -59,7 +59,7 @@
                         </a>
                     </div>
                     <div class="header__icon">
-                        <a class="user" href="#">
+                        <a class="user" data-fancybox data-src="#modal" href="javascript:;">
                             <img src="img/main/user.png" alt="user">
                         </a>
                     </div>
@@ -87,7 +87,7 @@
                         </div>
                     </div> 
 
-                        <div class="navigation-drop__down">
+                    <div class="navigation-drop__down">
                           <ul>
                             <li><a class="icon-emblem" href="#"><strong>Акции</strong></a></li>
                             <li><a class="icon-emblem2" href="#"><strong>Новинки</strong></a></li>
@@ -104,21 +104,21 @@
                             <li><a class="icon-emblem13" href="#">Детям и мамам</a></li>
                             <li><a class="icon-emblem14" href="#">Другое</a></li>
                           </ul> 
-                        </div>
                     </div>
+                 </div>
 
-                    <div class="header__navigation-form">
+                 <div class="header__navigation-form">
                         <form>
                             <input type="text" placeholder="Я хотел бы купить" required>   
                             <button type="submit">
                                 <img src="img/main/search.png" alt="search">
                             </button>
                         </form>
-                    </div>
+                 </div>
 
                 <div class="header__basket-box">
                     <div class="header__navigation-buy">
-                            <a class="basket" href="#">
+                            <a class="basket" href="basket-page.html">
                                 <img src="img/main/busket.png" alt="basket">
                             </a>
                                 <div class="price">16 222$
@@ -269,12 +269,10 @@
 
                      
                     </div>
-                </div>    
-
-                  </div>  
-                      
-                </div>        
+                </div>           
+            </div>        
         </div>
+      </div>
 
         <div class="main__background" style="background-image: url(../img/main/mainimg/header.jpeg);">
             <div class="container">
@@ -1149,7 +1147,7 @@
 
            </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="products">
         <div class="container">
@@ -1165,21 +1163,19 @@
                             Cмотреть все
                         </div>
                         <div class="show-controls">
-                            <a class="left" href="#">
-                                <img src="img/main/left-arrow.png" alt="">
-                            </a>
-                            <div class="right">
-                                <a href="#">
-                                    <img src="img/main/right-arrow.png" alt="">
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="product__stock-pictures">
+  
+                <div class="product__slider-inner">
                     <div class="pictures__one pictures">
                         <img src="img/main/special/seeds.png" alt="seeds">
+                    </div>
+                    <div class="pictures__two pictures">
+                        <img src="img/main/special/cocacola.png" alt="cocacola">
+                    </div>
+                    <div class="pictures__three pictures">
+                        <img src="img/main/special/chocolate.png" alt="chocolate">
                     </div>
                     <div class="pictures__two pictures">
                         <img src="img/main/special/cocacola.png" alt="cocacola">
@@ -1332,6 +1328,31 @@
         </div>
       </div> 
     </footer> 
+
+    <div id="modal" class="modal">
+        <div class="modal__title">
+            Войти
+        </div>
+        <div class="modal__inputs">
+            <div class="data">Телефон / E-mail</div> 
+                <input type="password">  
+            <div class="pass">Пароль</div>
+                <input type="password"> 
+        </div>
+        <div class="modal__reminder">
+           <div class="modal__reminder-input">
+               <input type="checkbox"> 
+               <span>Запомнить меня</span>
+           </div>
+
+            <div class="forgot__pass">
+                Забыли пaроль?
+            </div>
+        </div>
+        <div class="modal__btn">
+            <button type="submit">Войти</button>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
