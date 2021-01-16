@@ -1,20 +1,22 @@
 $(function() {
 
-//product__slider-inner (Index Page)   
+//Новые поступления (Index Page)   
+$('.product__objects').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    dots: false
+});
+
+//
+
+//Специальные предложения (Index Page)   
 $('.product__slider-inner').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false
 });
-
-let slickBtnLeft = document.querySelector('.slick-prev.slick-arrow');
-slickBtnLeft.textContent = '';
-
-let slickBtnRight = document.querySelector('.slick-next.slick-arrow');
-slickBtnRight.textContent = '';
-
-//
     
 //Tabs(Card Page)    
 $('.wrapper .tab').on('click', function(event) {
@@ -36,5 +38,22 @@ $('.cabinet__wrapper .tab').on('click', function(event) {
         return false;
     });
 
+
+    
 });
 
+
+ //Show the dropdown Menu (Caterofy and Favorites Pages)
+ function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown Menu (Caterofy and Favorites Pages)
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}

@@ -300,238 +300,22 @@
                     Молочная продукция
                 </div>
 
-                <div class="choise__block-menu">
-                    <ul class="list__main">
-                        <li> 
-                            <input type="checkbox" class="btn-choise">
-                              <a href="#" class="popup-menu">
-                               <div class="menu__increase">
-                                <img src="img/category/increase.png" alt="increase-button">По возрастанию цены
-                               </a>  
-                                
-                                <div class="popup-menu__list">
-                                    <div class="wrapper">
-                                        <ul class="down__list">
-                                            <li> 
-                                                <a href="#" class="popup-menu">
-                                                    <div class="menu__increase">
-                                                     <img src="img/category/increase_down.png" alt="increase-button">По убыванию цены
-                                                    </a>  
-                                            </li>
-
-                                            <li> 
-                                              <a href="#" class="popup-menu">
-                                                <div class="menu__increase">
-                                                <img src="img/category/increase_down.png" alt="increase-button">По популярности 
-                                              </a>  
-                                            </li>
-                
-                                        </ul>
-                
-                                    </div>
-                                </div> 
-                        </li>
-                    </ul>
-
-                    <!-- <div class="menu__price">
-                        По возрастанию цены 
-                   </div> -->
-
+                <div class="navbar choise__block-menu">
+                    <div class="dropdown list__main">
+                      <button class="dropbtn" onclick="myFunction()">
+                        <img src="img/category/increase.png" alt="increase-button">  По возрастанию цены
+                      </button>
+                      <div class="dropdown-content" id="myDropdown">
+                        <a href="#"><img src="img/category/increase_down.png" alt="increase-button">По убыванию цены</a>
+                        <a href="#"><img src="img/category/increase_down.png" alt="increase-button">По популярности </a>
+                      </div>
+                    </div> 
                 </div>
-    
+                
                </div>
            </div>           
        </div>
    </section>
-                 <!-- <nav>
-                    <ul class="list__main ">
-                        <li>
-                            <input type="checkbox" class="menu-btn">
-                            <a href="#" class="popup-menu">
-                                <img src="img/popup-button.png" alt="popup-button">
-                            </a>
-            
-                            <div class="popup-menu__list">
-                                <div class="wrapper">
-                                    <ul class="down__list">
-                                        <li>
-                                            <a href="#">
-                                               
-                                            </a>
-                                        </li>
-                                        <li>
-                                          
-                                        </li>
-                                        <li>          
-                                        </li>
-            
-                                    </ul>
-            
-                                </div>
-                            </div>
-                        </li>
-            
-                    </ul>
-                </nav>  -->
-            
-<!-- <style>
- .list__main {
-  margin-left: 100px;
-  width: 400px;
-  padding: 20px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.list__main a {
-  color: rgb(105, 105, 105);
-}
-
-.list__main a img{
-  width: 24px;
-}
-
-.list__main > li {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  text-align: center;
-  margin: 0 20px;
-}
-
-.list__main > li > a {
-  font-size: 20px;
-}
-
-.list__main > li > a:hover {
-  color: rgb(105, 105, 105);
-}
-
-.list__main .menu {
-  position: relative;
-}
-
-.list__main > li > input:checked ~ .popup-menu__list {
-  display: block;
-}
-
-.menu-btn {
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  z-index: 3;
-  cursor: pointer;
-  height: 48px;
-}
-
-.wrapper input.menu-btn:checked{
-  display: none;
-  
-}
-
-.wrapper input.menu-btn:checked ~ .more__btn{
-  display: none;
-}
-
-.wrapper input.menu-btn:checked ~ .down__list.more-items{
-  display: flex;
-}
-
-.popup-menu__list {
-  position: absolute;
-  top: 55px;
-  right: -120px;
-  display: none;
-}
-
-.wrapper {
-  position: relative;
-  overflow: auto;
-  max-height: 500px;
-  padding: 0;
-  margin: 0 auto;
-  width: 320px;
-  border-radius: 5px;
-  border: 1px solid rgb(223, 223, 223);
-}
-
-.popup-menu__list::before {
-  content: '';
-  position: absolute;
-  right: 120px;
-  top: -28px;
-  border: 12px solid transparent;
-  border-bottom: 17px solid #555b541f;
-  overflow: visible;
-  opacity: 3;
-}
-
-.down__list {
-  margin: 0;
-  padding: 25px ;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  border-bottom: 1px solid rgb(232 232 232);
-}
-
-.down__list li{
-  list-style: none;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-}
-
-.down__list li a {
-  box-sizing: border-box;
-  display: block;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-}
-
-.down__list li a:hover {
-  border: 1px solid #dfdcdc;
-  border-radius: 4px;
-}
-
-.down__list li a:focus {
-  border: 1px solid #6790db;
-  border-radius: 4px;
-} 
-
-.down__list li a img{
-  width: 60%;
-  margin-bottom: 5px;
-}
-
-.more__btn a {
-  width: 100%;
-  height: 48px;
-  background: rgb(232 232 232);
-  text-align: center;
-  line-height: 3;
-  display: inline-block;
-  color: rgb(105, 105, 105);
-}
-
-.down__list.more-items{
-  padding-bottom: 0;
-  border-top: 1px solid rgb(240, 240, 240);
-  display: none;
-}
-
-.kottans {
-  color: rgb(144 142 142);
-}
-    </style>
-        -->
-
 
     <section class="category">
         <div class="container">
@@ -599,9 +383,9 @@
         
                      <div class="product__stock">
         
-                    <div class="product__objects">
+                    <div class="category__objects">
                       
-                        <div class="object">
+                        <div class="object category__object">
                             <div class="sale">
                                 Акция
                             </div>
@@ -635,7 +419,7 @@
                         
                         </div>
         
-                        <div class="object">
+                        <div class="object category__object">
                             <div class="sale">
                                 Акция
                             </div>
@@ -669,7 +453,7 @@
                         
                         </div>
         
-                        <div class="object">
+                        <div class="object category__object">
                             <div class="sale">
                                 Акция
                             </div>
@@ -703,7 +487,7 @@
                         
                         </div>
         
-                        <div class="object">
+                        <div class="object category__object">
                             <div class="sale">
                                 Акция
                             </div>
@@ -748,7 +532,7 @@
         
                      <div class="product__stock product__sale">
         
-                    <div class="product__objects">
+                    <div class="category__objects">
                       
                         <div class="object">
                             <div class="sale orange_hit">
@@ -898,7 +682,7 @@
         
                      <div class="product__stock product__arrival">
         
-                    <div class="product__objects">
+                    <div class="category__objects">
                       
                         <div class="object">
                             <div class="sale blue_new">
