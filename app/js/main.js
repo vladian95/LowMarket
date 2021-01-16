@@ -57,3 +57,33 @@ window.onclick = function(e) {
       }
   }
 }
+
+
+// Favorites Pаge (Бренды)
+let brandColl = document.getElementsByClassName("brand");
+// let i;
+
+for (i = 0; i < brandColl.length; i++) {
+    brandColl[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+                    
+
+// Cabinet Page active class to the current button 
+let header = document.getElementById("block-btns");
+let btns = header.getElementsByClassName("button");
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}

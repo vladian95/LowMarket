@@ -915,7 +915,7 @@
         z-index: 1;
         border-radius: 24px;
         border-top: none;
-
+    }
     
     .dropdown-content a {
         float: none;
@@ -936,8 +936,8 @@
     .show {
         display: block;
     }
-    
-}
+ }
+
 
 //category
 .category {
@@ -1988,7 +1988,6 @@
                 text-decoration: underline;
                 color: $green;
                 transition: 0.5s;
-                font-size: 17px;
             }
         }
         .first__word {
@@ -2063,7 +2062,8 @@
     display: flex;  
 
 .favorites-blocks-menu {
-    height: 780px;
+    height: auto;
+    max-height: 840px;
 
     .favorites-list__menu {
         border-bottom: 1px solid $gray;
@@ -2081,7 +2081,23 @@
         }
         .brand {
             font-weight: 600;
-            font-size: 16px;
+            font-size: 17px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            padding-bottom: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+        }
+        .content {
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            a {
+                padding-bottom: 4px;
+            }
         }
     }
     .favorites-list__button {
@@ -2176,10 +2192,6 @@
                 outline: none;
                 cursor: pointer;
                 
-            }
-            button.active {
-                color: #fff;
-                background-color: $green;
             }
 
         }
@@ -2361,6 +2373,19 @@
         }
 }
 
+button.active, .cabinet__blocks-btns .block-btns button:hover {
+    background-color: rgb(74, 172, 74);
+    color: white;
+    transition: 0.5s;
+}
+
+#block-btns button.active {
+    background-color:  rgb(74, 172, 74);;
+}
+
+#block-btns .tab.active {
+    background: green; //Разберись
+}
 
 //modal
 #modal {
